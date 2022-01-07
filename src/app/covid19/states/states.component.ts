@@ -17,10 +17,10 @@ export class StatesComponent implements OnInit {
   constructor(private service:NgblogCovid19Service) { }
 
   ngOnInit(): void {
-    this.getAllCountryReports()
+    this.getAllStateReports()
   }
 
-  public getAllCountryReports()
+  public getAllStateReports()
   {
     let resp=this.service.covid19Reports('states');
     resp.subscribe(report=>this.dataSource.data = report as CountryReports[]);
