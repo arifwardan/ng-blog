@@ -10,6 +10,6 @@ export class NgblogCovid19Service {
 
   public covid19Reports(param:string)
   {
-    return this.http.get("https://corona.lmao.ninja/v3/covid-19/"+param +"/");
+    return this.http.get("https://corona.lmao.ninja/v3/covid-19/"+param +"");
   }
 }

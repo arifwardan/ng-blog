@@ -1,15 +1,15 @@
 export interface CountryReports{
-  country: string;
-  cases: number;
-  todayCases: number;
-  deaths: number;
-  todayDeaths: number;
-  recovered: number;
-  todayRecovered: number;
-  active: number;
-  critical: number;
-  casesPerOneMillion: number;
-  deathsPerOneMillion: number;
-  tests: number;
-  testsPerOneMillion: number;
+  country: any |null;
+  cases: any |null;
+  todayCases: any |null;
+  deaths: any |null;
+  todayDeaths: any |null;
+  recovered: any |null;
+  todayRecovered: any |null;
+  active: any |null;
+  critical: any |null;
+  casesPerOneMillion: any |null;
+  deathsPerOneMillion: any |null;
+  tests: any |null;
+  testsPerOneMillion: any |null;
 }

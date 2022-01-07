@@ -10,6 +10,9 @@ import { BlogComponent } from './blog/blog.component';
 import { Covid19Component } from './covid19/covid19.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
+import { StatesComponent } from './covid19/states/states.component';
+import { ContinentsComponent } from './covid19/continents/continents.component';
+import { CountriesComponent } from './covid19/countries/countries.component';
 
 
 @NgModule({
@@ -19,6 +22,9 @@ import { MatTableModule } from '@angular/material/table';
     AboutComponent,
     BlogComponent,
     Covid19Component,
+    StatesComponent,
+    ContinentsComponent,
+    CountriesComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,4 +36,7 @@ import { MatTableModule } from '@angular/material/table';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+}
