@@ -13,6 +13,7 @@ import { MatTableModule } from '@angular/material/table';
 import { StatesComponent } from './covid19/states/states.component';
 import { ContinentsComponent } from './covid19/continents/continents.component';
 import { CountriesComponent } from './covid19/countries/countries.component';
+import { AllComponent } from './covid19/all/all.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { CountriesComponent } from './covid19/countries/countries.component';
     StatesComponent,
     ContinentsComponent,
     CountriesComponent,
+    AllComponent,
   ],
   imports: [
     BrowserModule,

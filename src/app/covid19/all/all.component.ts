@@ -1,15 +1,14 @@
-import { AllReport } from './../../allReports';
-import { NgblogCovid19Service } from 'src/app/ngblog-covid19.service';
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { AllReport } from 'src/allReports';
+import { NgblogCovid19Service } from 'src/app/ngblog-covid19.service';
 
 @Component({
-  selector: 'app-country',
-  templateUrl: './covid19.component.html',
-  styleUrls: ['./covid19.component.css']
+  selector: 'app-all',
+  templateUrl: './all.component.html',
+  styleUrls: ['./all.component.css']
 })
-
-export class Covid19Component implements OnInit {
+export class AllComponent implements OnInit {
 
   ELEMENT_DATA!: AllReport[];
   displayedColumns:string[] = [
@@ -48,7 +47,5 @@ export class Covid19Component implements OnInit {
     let resp=this.service.covid19Reports(param);
     resp.subscribe(report=>this.dataSource.data = report as AllReport[]);
   }
-
-
 
 }

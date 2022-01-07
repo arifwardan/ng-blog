@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { StatesComponent } from './covid19/states/states.component';
 import { CountriesComponent } from './covid19/countries/countries.component';
 import { ContinentsComponent } from './covid19/continents/continents.component';
+import { AllComponent } from './covid19/all/all.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'covid19/states', component: StatesComponent},
   {path: 'covid19/continents', component: ContinentsComponent},
   {path: 'covid19/countries', component: CountriesComponent},
+  {path: 'covid19/all', component: AllComponent},
 ];
 
 @NgModule({
